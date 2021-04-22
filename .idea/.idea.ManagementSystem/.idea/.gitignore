@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.ManagementSystem.iml
+# Datasource local storage ignored files
+/../../../../../../../:\C#课设\ManagementSystem\ManagementSystemUl\.idea\.idea.ManagementSystem\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

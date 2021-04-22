@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B085934-4285-48A5-9861-FC8FFA1125F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp</RootNamespace>
+    <AssemblyName>WindowsFormsApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao.cs" />
+    <Compile Include="FinancialAdminForm\Form3_2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_2_2.Designer.cs">
+      <DependentUpon>Form3_2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3_2.Designer.cs">
+      <DependentUpon>Form4_3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm\Form5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm\Form5_2.Designer.cs">
+      <DependentUpon>Form5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm\Form5_1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm\Form5_1_1.Designer.cs">
+      <DependentUpon>Form5_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm\Form5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm\Form5_1.Designer.cs">
+      <DependentUpon>Form5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAdminForm\f_head.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAdminForm\f_head.Designer.cs">
+      <DependentUpon>f_head.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAdminForm\add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAdminForm\add.Designer.cs">
+      <DependentUpon>add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAdminForm\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAdminForm\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAdminForm\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAdminForm\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_1_1.Designer.cs">
+      <DependentUpon>Form3_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_2.Designer.cs">
+      <DependentUpon>Form3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialAdminForm\Form3_2_1.Designer.cs">
+      <DependentUpon>Form3_2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_1.Designer.cs">
+      <DependentUpon>Form4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_1_1.Designer.cs">
+      <DependentUpon>Form4_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_2.Designer.cs">
+      <DependentUpon>Form4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_2_1.Designer.cs">
+      <DependentUpon>Form4_2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3.Designer.cs">
+      <DependentUpon>Form4_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_3_1.Designer.cs">
+      <DependentUpon>Form4_3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_4.Designer.cs">
+      <DependentUpon>Form4_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Form4_4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Form4_4_1.Designer.cs">
+      <DependentUpon>Form4_4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffDataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FinancialAdminForm\Form3_2_2.resx">
+      <DependentUpon>Form3_2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_3_2.resx">
+      <DependentUpon>Form4_3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForm\Form5_1_1.resx">
+      <DependentUpon>Form5_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAdminForm\f_head.resx">
+      <DependentUpon>f_head.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAdminForm\add.resx">
+      <DependentUpon>add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAdminForm\update.resx">
+      <DependentUpon>update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAdminForm\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialAdminForm\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialAdminForm\Form3_1_1.resx">
+      <DependentUpon>Form3_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialAdminForm\Form3_2.resx">
+      <DependentUpon>Form3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialAdminForm\Form3_2_1.resx">
+      <DependentUpon>Form3_2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_1.resx">
+      <DependentUpon>Form4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_1_1.resx">
+      <DependentUpon>Form4_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_2.resx">
+      <DependentUpon>Form4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_2_1.resx">
+      <DependentUpon>Form4_2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_3.resx">
+      <DependentUpon>Form4_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_3_1.resx">
+      <DependentUpon>Form4_3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_4.resx">
+      <DependentUpon>Form4_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Form4_4_1.resx">
+      <DependentUpon>Form4_4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForm\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StaffForm\Form5_1.resx">
+      <DependentUpon>Form5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForm\Form5_2.resx">
+      <DependentUpon>Form5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StaffDataDataSet.xsc">
+      <DependentUpon>StaffDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffDataDataSet.xss">
+      <DependentUpon>StaffDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDataDataSet1.xsc">
+      <DependentUpon>StaffDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffDataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffDataDataSet1.xss">
+      <DependentUpon>StaffDataDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManagementSystemBll\ManagementSystemBll.csproj">
+      <Project>{beaea02e-8419-4bee-8d6e-f6023bb5cc4c}</Project>
+      <Name>ManagementSystemBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagementSystemModels\ManagementSystemModels.csproj">
+      <Project>{b0d4bd03-2fd0-46e1-983a-0b1f8af4a8c9}</Project>
+      <Name>ManagementSystemModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
